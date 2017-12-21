@@ -1,1 +1,13 @@
 language: java
+sudo: false
+dist: trusty
+install: true
+#addons:
+#  sonarcloud:
+ #   organization: "xxxx"
+#    token:
+ #     secure: "xxxxx"
+jdk:
+  - oraclejdk8
+on_success: always
+on_failure: always
