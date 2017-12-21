@@ -2,11 +2,11 @@ language: java
 sudo: false
 dist: trusty
 install: true
-#addons:
-#  sonarcloud:
- #   organization: "xxxx"
-#    token:
- #     secure: "xxxxx"
+addons:
+  sonarcloud:
+    organization: "torehc-github"
+    token:
+      secure: "1e2a03539ccd067977df32efbba7ada987753cc0"
 jdk:
   - oraclejdk8
 on_success: always
