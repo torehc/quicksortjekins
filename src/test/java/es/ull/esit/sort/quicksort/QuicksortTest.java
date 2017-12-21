@@ -57,38 +57,6 @@ public class QuicksortTest {
         printResult(test);
     }
 
-    @Test
-    public void testQuickSort() {
-        for (Integer i : numbers) {
-            System.out.println(i + " ");
-        }
-        long startTime = System.currentTimeMillis();
-
-        Quicksort sorter = new Quicksort();
-        sorter.sort(numbers);
-
-        long stopTime = System.currentTimeMillis();
-        long elapsedTime = stopTime - startTime;
-        System.out.println("Quicksort " + elapsedTime);
-
-        if (!validate(numbers)) {
-            fail("Should not happen");
-        }
-        assertTrue(true);
-    }
-
-    @Test
-    public void testStandardSort() {
-        long startTime = System.currentTimeMillis();
-        Arrays.sort(numbers);
-        long stopTime = System.currentTimeMillis();
-        long elapsedTime = stopTime - startTime;
-        System.out.println("Standard Java sort " + elapsedTime);
-        if (!validate(numbers)) {
-            fail("Should not happen");
-        }
-        assertTrue(true);
-    }
 
     private boolean validate(int[] numbers) {
         for (int i = 0; i < numbers.length - 1; i++) {
